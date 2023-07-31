@@ -1,0 +1,484 @@
+body{
+
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+
+.dupnav{
+	background-color: transparent;
+	font-family: Roboto;
+font-style: normal;
+font-size: 2vw;
+	float:right;
+	margin-top:35px;
+
+}
+.dupnav_signout{
+background-color: transparent;
+border-color: transparent;
+padding: 10px;
+
+
+}
+.dupnav_signout:hover{
+ 	color: black;
+
+	background-color:#EEE5EE ;
+border-radius: 50px;
+
+}
+
+.profilecard{
+background: linear-gradient(223.48deg, #2399DC 0%, #08C3CF 100%);
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.18);
+border-radius: 15px;
+width: 96%;
+padding:20px;
+margin: 0px auto;
+}
+.secondcontainer{
+margin-top: 2		0px;
+
+}
+.profilecardpic{
+margin-left: auto;
+margin-right: auto;
+
+border-radius: 100%;
+height:auto;
+width:36%;
+overflow:auto;
+background: #C4C4C4;
+}
+.profilecardtopic{
+color:white;
+text-align: center;
+
+}
+.quickupdates{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+width: 96%;
+padding:20px;
+background: linear-gradient(223.48deg, #2399DC 0%, #08C3CF 100%);
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.18);
+border-radius: 15px;
+}
+.quickupdatestopic{
+margin: 40px 0px 60px 0px;
+color:white;
+text-align: center;
+}
+
+.quickupdatespic{
+padding:15px;
+color:white;
+}
+
+
+.aspectcards{
+	display: block;
+	background-color:#FDF4F4;
+	border-radius: 20px;
+	padding:5px;
+	padding-top: 20px;
+	padding-bottom:20px;
+	height:auto;
+margin-left: auto;
+margin-right: auto;
+}
+.commoncard{
+
+
+	position:relative;
+width:30%;
+/*height:auto;*/
+padding-bottom: 30%;
+background-color: #50514F;
+display:inline-block;
+margin:10px;
+border-radius: 6%;
+}
+@media screen and (max-width: 1260px) and (min-width: 847px)
+{
+.commoncard{
+
+
+	
+width:45%;
+padding-bottom: 45%;
+}
+
+}
+@media screen and (max-width: 847px)
+{
+.commoncard{
+
+
+	
+width:40%;
+padding-bottom: 40%;
+}
+
+}
+.rest{
+	background: linear-gradient(154.95deg, rgba(36, 115, 234, 0.62) 35.62%, rgba(27, 230, 108, 0.62) 112.92%);
+box-shadow: 0px 5.36009px 42.8807px rgba(0, 0, 0, 0.3);
+}
+.courses{
+		position:relative;
+
+}
+.attendence{
+		position:relative;
+
+}
+.socialwall{
+		position:relative;
+
+}
+.notification{
+		position:relative;
+
+}
+.AccessCardReports{
+		position:relative;
+
+}
+.Leaderboards{
+		position:relative;
+
+}
+.cardfills{
+	text-align: right;
+color:white;
+position: absolute;
+right:15%;
+top:70%;
+}
+
+
+.reports-card{
+
+height:auto;
+background-color: #50514F;
+color:white;
+
+border-radius: 8px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 15px;
+padding-left: 7px;
+}
+.reports-card-topic{
+margin-top: 90px;
+padding-bottom: 80px;
+margin-left: 7px;
+}
+.reports-card-topic-links{
+	
+	display:block;
+color:blue;
+margin-top: 10px;
+}
+.container2hedings{
+font-family: Roboto;
+font-style: normal;
+	font-size:2vw;
+	font-weight: bold;
+}
+.container2ptag{
+	font-family: Roboto;
+font-style: normal;
+	font-size:1.3vw
+	font-weight: normal;
+}
+
+@media screen and (max-width:574px){
+.container2hedings{
+	font-size:3.5vw;
+}
+.container2ptag{
+	font-family: Roboto;
+font-style: normal;
+	font-size:3vw;
+	
+}
+
+.bmllogo{
+
+	display: none;
+}
+}
+
+.container3{
+margin-top: 20px;
+
+}
+.bmllogo{
+	margin-top: 30px;
+max-width: 100%;
+}
+.coursestuff{
+background-color: #FDF4F4;
+padding:30px;
+border-radius: 15px;
+}
+.coursestuff-fill{
+width:100%;
+height:auto;
+display: inline-block;
+margin: 0px auto;
+background: #247BA0;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.32);
+border-radius: 15px;
+
+}
+.courses-of-sem{
+color:white;
+padding-left: 40px;
+padding-bottom: 40px;
+width:20%;
+float:left;
+}
+.selected-subject{
+	padding-top: 30px;
+	padding-left: 90px;
+display: inline-block;
+width:70%;
+color:white;
+
+}
+
+.selected-subject-bars
+{
+float:left;
+display: inline-block;
+}
+
+.selected-subject-progressbar{
+display: inline-block;
+color:white;
+}
+
+
+.selected-subject-progressbar1{
+float:right;
+width:80%;
+padding-bottom: 20px;
+padding-right: 140px;
+
+}
+.progressbar-indicators{
+	width:60%;
+	display:block;
+margin:20px;
+margin-left: auto;
+margin-right: auto;
+}
+
+@media screen and (max-width: 679px)
+{
+.selected-subject-progressbar1{
+	padding-left: 20px;
+	padding-right: 30px;
+	width:100%;
+	display:block;
+float:right;
+}
+.selected-subject{
+	padding-left: 0px;
+display: block;
+width:100%;
+}
+
+
+.selected-subject-bars
+{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+float:none;
+
+}
+
+.courses-of-sem{
+	width:100%;
+display:block;
+float:none;
+}
+.coursestuff{
+
+padding:10px;
+}
+}
+
+
+
+
+
+
+
+.container4{
+margin-top: 20px;
+}
+.whole-attendence{
+background-color: #FDF4F4;
+padding:30px;
+border-radius: 15px;
+}
+.whole-attendence-card{
+padding: 30px;
+	background: #247BA0;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.32);
+border-radius: 15px;
+}
+.attence-1-subcard{
+width:25%;
+display:inline-block;
+color: white;
+}
+
+.attendence-of-subjects{
+	width:74%;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.container2ptag-attendence{
+
+	font-size:1.3vw
+}
+.container2ptag-attendence1{
+	
+
+}
+@media screen and (max-width:1280px){
+.attence-1-subcard{
+width:100%;
+display:block;
+color: white;
+}
+.container2ptag-attendence{
+
+	font-size:3vw
+}
+ .vl {
+
+       
+        font-size: 3vw;
+       
+    }
+
+
+    .attendance {
+        font-size: 3vw;
+    }
+
+    .numerical_stats {
+font-size: 3vw;
+    }
+.container2ptag-attendence1{
+	width:80%;
+	display: block;
+margin-right: auto;
+margin-left: auto;
+}
+.attendence-of-subjects{
+	width:100%;
+	display:block;
+}
+.whole-attendence-card{
+padding: 10px;
+}
+}
+
+.card {
+        background: linear-gradient(189.25deg, #2399DC 0%, #08C3CF 100%);
+        border-radius: 15px;
+        margin-top: 20px;
+        width:100%;
+
+    }
+
+    .vl {
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5vw;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+
+
+    .attendance {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5vw;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    .numerical_stats {
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5vw;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+
+    .m1 {
+
+        margin-left: 4vw;
+    }
+
+    .m2 {
+        margin-left: 6vw;
+    }
+#attedencecard{
+	display:none;
+}
+#coursecard{
+	display:none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.sub5:hover{
+	width:105%;
+	z-index:10;
+	margin-bottom: -30px;
+	padding: 10px 0px;
+	margin-left: -30px;
+	border-radius: 30px;
+}
+#daa{
+	display: none;
+}
+#coa{
+	display: none;
+}
+#oops{
+	display: none;
+}
+#dbms{
+	display: none;
+}
+#emsa{
+	display: none;
+}
+#cn{
+	display: none;
+}
+#els{
+	display: none;
+}
