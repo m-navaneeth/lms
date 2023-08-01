@@ -2,1255 +2,203 @@
 
 <html>
 <head>
-<link rel="stylesheet"  href="css/bml1.css">
-<link rel="stylesheet"  href="css/circle.css">
+<link rel="stylesheet"  href="css/BML.css">
  <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="https://fonts.googleapis.com/css?family=Pompiere&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  </head>
 <body>
-<div class="container-fluid" >
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="dupnav">
-				<form method="POST" action="signout.php">
-					<button name="signout" class="dupnav_signout" type="submit" >SIGN OUT</button>
-				</form>
-				
-			</div>
-		</div>
-	</div>
+<div>
+<img class="bimg" src="images/lib.jpg">
+
+</div>
+<div class="container-fluid">
+<div class="row ">
+<div class="col-sm-2 col-md-3 col-lg-4">
+<img src="images/bml.jpg" class="bmlogo" >
+</div>
+<div class="col-sm-8 col-md-6 col-lg-4">
+<div class="form">
+<form  method="POST" action="login.php" >
+<center><h1>Sign in</h1></center>
+<br>
+
+Userame:
+<br>
+<input name="username" type="txt" placeholder="  username">
+<div class="phpelments" id="phpelments">
+
+</div>
+<br>
+<div class="username">
+Password:
+<br>
+<input name="password" type="password" placeholder="  password">
+<div class="phpelments" id="phpelments">
+
+</div>
+<br><br>
 </div>
 
-
-<div class="container-fluid secondcontainer" >
-	<div class="row">
-
-
-		<div class="col-sm-3" >
-			<div style="background-color:#FDF4F4;border-radius: 5%;padding:5px;padding-top: 20px;padding-bottom: 20px;">
-			<div class="profilecard">
-				<div class="profilecardpic">
-					<img src="images/avatar.png" style="max-width: 80%; margin-left:10px; ">
-				</div>
-				<br>
-				<div class="profilecardtopic" > 
-				<h3 class="container2hedings">name</h3>
-				<p class="container2ptag">Attendence : 22</p>
-				<p class="container2ptag">cse 2</p>
-				<p class="container2ptag">ID : B00987234</p>
-				<p class="container2ptag">CGPA : 9.5</p>
-				</div>
-			</div>
-			<div class="quickupdates" >
-				<div class="quickupdatespic">
-				<h3 class="container2hedings">Quick</h3>
-				<h3 class="container2hedings">Updates</h3>
-				</div>
-				<div class="quickupdatestopic">
-				<p class="container2ptag">Quiz on SUbject X on 5th</p>
-				<p class="container2ptag">Next class : DAA(timings)</p>
-				</div>	
-				</div>
-		</div>
-		</div>
+<a href="./home.html">
+<input class="signin" name="signin" value="sign in" id="submit" >
+ </a>
 
 
+<br><br><br><br>
 
-		<div class="col-sm-7" style="" >
-		
- 			<div class="aspectcards">
- 				<a href="#coursecard">
-		 		<div class="commoncard courses" id="courses">
-		 			<div class="cardfills">
-						<h3 class="container2hedings">Courses</h3>		 				
-		 			</div>
-		 		</div></a>
-		 		<a href="#attedencecard">
-		 		<div class="commoncard attendence"  id="attendence" >
-		 			<div class="cardfills">
-						<h3 class="container2hedings">Attendance</h3>	
-
-		 			</div>
-		 		</div>
-		 	</a>
-		 		<div class="commoncard socialwall">
-		 			<div class="cardfills">
-						<h3 class="container2hedings">Social Wall</h3>	
-
-		 			</div>
-		 		</div>
-		 		<div class="commoncard notification">
-		 			<div class="cardfills">
-						<h3 class="container2hedings">Notification</h3>	
-
-		 			</div>
-		 		</div>		
-		 		<div class="commoncard AccessCardReports" >
-		 			<div class="cardfills">
-						<h3 class="container2hedings">Access Card Reports</h3>	
-
-		 			</div>
-		 		</div>
-		 		<div class="commoncard Leaderboards">
-		 			<div class="cardfills">
-						<h3 class="container2hedings">Leaderboards</h3>
-
-		 			</div>
-		 		</div>
-	 	 	</div>
-		</div>
-
-
-
-		<div class="col-sm-2" style="margin-left: -10px;">
-			<div style="background-color: #FDF4F4;padding:0 8px;padding-bottom:80px;padding-top: 30px;border-radius: 8px;">
-			<div class="reports-card">
-				<h3 class="container2hedings">Reports</h3>
-				<div class="reports-card-topic">
-					<a class="reports-card-topic-links container2ptag">Attendance Report</a>
-					<a class="reports-card-topic-links container2ptag">Leader board Report</a>
-
-					<a class="reports-card-topic-links container2ptag">Student Access Card Report</a>
-
-					<a class="reports-card-topic-links container2ptag">Student Acount Report</a>
-
-					<a class="reports-card-topic-links container2ptag">Batch wise Report</a>
-
-				</div>
-			</div>
-			</div>
-		</div>
-	</div>
+</form>
 </div>
-
-
-
-
-
-<div class="container-fluid container3" id="coursecard">
-	<div class="row">
-		<div class="col-sm-3"  >
-		<img src="images/bml.jpg" class="bmllogo">
-		</div>
-
-
-
-		<div class="col-sm-9">
-			<div class="coursestuff">
-				<div class="coursestuff-fill">
-					
-					<div class="courses-of-sem">
-						<h3 class="container2hedings" style="margin-bottom: 60px;color:white;padding-top: 30px;">Courses</h3>
-						<a style="display: block;" class="container2ptag" id="sdaa">DAA</a><br>	
-						<a style="display: block;" class="container2ptag" id="scoa">COA</a><br>
-						<a style="display: block;" class="container2ptag" id="soops">OOPS</a><br>
-						<a style="display: block;" class="container2ptag" id="sdbms">DBMS</a><br>	
-						<a style="display: block;" class="container2ptag" id="semsa">EMSA</a><br>	
-						<a style="display: block;" class="container2ptag" id="scn">CN</a><br>	
-						<a style="display: block;" class="container2ptag" id="sels">ELS</a><br>
-					</div>
-
-					<div id="daa">
-					<div class="selected-subject">
-						<div style="">
-						<h3 class="container2hedings" style="text-align: center;"> DAA</h3>
-						<div style="" class="selected-subject-bars">
-							<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p90 big nanda bark" style="font-size: 200px;">
-							    <span >90%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-							     <p style="text-align: center;" class="container2ptag">Your Score</p>
-							    </div>
-
-								<div  class="selected-subject-bars">
-								<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p66 big nanda2 bark"  style="font-size: 200px;">
-							    <span>40/60</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							        </div>							        
-							    </div>  
-						    </div>
-						    <p style="text-align: center;" class="container2ptag">Internals</p>
-							</div>
-						</div>
-							
-					</div>
-					<div class="selected-subject-progressbar">
-						<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-1</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-2</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Mid-sem</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Project</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-					</div>
-					<div class="progressbar-indicators">
-							
-							<button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-warning" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">your marks</span>
-							</button>
-
-
-
-								
-							 <button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-danger" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">class average</span>
-							</button>
-					</div>
-				</div>
-
-
-
-
-
-
-
-
-				<div id="coa" >
-					<div class="selected-subject">
-						<div style="">
-						<h3 class="container2hedings" style="text-align: center;"> COA</h3>
-						<div style="" class="selected-subject-bars">
-							<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p82 big nanda bark" style="font-size: 200px;">
-							    <span >82%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-							     <p style="text-align: center;" class="container2ptag">Your Score</p>
-							    </div>
-
-								<div  class="selected-subject-bars">
-								<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p55 big nanda2 bark"  style="font-size: 200px;">
-							    <span>40/60</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							        </div>							        
-							    </div>  
-						    </div>
-						    <p style="text-align: center;" class="container2ptag">Internals</p>
-							</div>
-						</div>
-							
-					</div>
-					<div class="selected-subject-progressbar">
-						<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-1</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-2</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Mid-sem</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Project</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-					</div>
-					<div class="progressbar-indicators">
-							
-							<button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-warning" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">your marks</span>
-							</button>
-
-
-
-								
-							 <button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-danger" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">class average</span>
-							</button>
-					</div>
-				</div>
-
-
-
-
-
-
-
-
-				<div id="oops">
-					<div class="selected-subject">
-						<div style="">
-						<h3 class="container2hedings" style="text-align: center;"> OOPS</h3>
-						<div style="" class="selected-subject-bars">
-							<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p87 big nanda bark" style="font-size: 200px;">
-							    <span >87%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-							     <p style="text-align: center;" class="container2ptag">Your Score</p>
-							    </div>
-
-								<div  class="selected-subject-bars">
-								<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p63 big nanda2 bark"  style="font-size: 200px;">
-							    <span>40/60</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							        </div>							        
-							    </div>  
-						    </div>
-						    <p style="text-align: center;" class="container2ptag">Internals</p>
-							</div>
-						</div>
-							
-					</div>
-					<div class="selected-subject-progressbar">
-						<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-1</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-2</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Mid-sem</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Project</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-					</div>
-					<div class="progressbar-indicators">
-							
-							<button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-warning" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">your marks</span>
-							</button>
-
-
-
-								
-							 <button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-danger" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">class average</span>
-							</button>
-					</div>
-				</div>
-
-
-
-
-
-
-				<div id="dbms">
-					<div class="selected-subject">
-						<div style="">
-						<h3 class="container2hedings" style="text-align: center;"> DBMS</h3>
-						<div style="" class="selected-subject-bars">
-							<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p95 big nanda bark" style="font-size: 200px;">
-							    <span >95%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-							     <p style="text-align: center;" class="container2ptag">Your Score</p>
-							    </div>
-
-								<div  class="selected-subject-bars">
-								<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p46 big nanda2 bark"  style="font-size: 200px;">
-							    <span>40/60</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							        </div>							        
-							    </div>  
-						    </div>
-						    <p style="text-align: center;" class="container2ptag">Internals</p>
-							</div>
-						</div>
-							
-					</div>
-					<div class="selected-subject-progressbar">
-						<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-1</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-2</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Mid-sem</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Project</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-					</div>
-					<div class="progressbar-indicators">
-							
-							<button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-warning" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">your marks</span>
-							</button>
-
-
-
-								
-							 <button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-danger" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">class average</span>
-							</button>
-					</div>
-				</div>
-
-
-
-
-
-
-				<div id="emsa">
-					<div class="selected-subject">
-						<div style="">
-						<h3 class="container2hedings" style="text-align: center;"> EMSA</h3>
-						<div style="" class="selected-subject-bars">
-							<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p70 big nanda bark" style="font-size: 200px;">
-							    <span >100%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-							     <p style="text-align: center;" class="container2ptag">Your Score</p>
-							    </div>
-
-								<div  class="selected-subject-bars">
-								<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p59 big nanda2 bark"  style="font-size: 200px;">
-							    <span>40/60</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							        </div>							        
-							    </div>  
-						    </div>
-						    <p style="text-align: center;" class="container2ptag">Internals</p>
-							</div>
-						</div>
-							
-					</div>
-					<div class="selected-subject-progressbar">
-						<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-1</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-2</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Mid-sem</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Project</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-					</div>
-					<div class="progressbar-indicators">
-							
-							<button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-warning" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">your marks</span>
-							</button>
-
-
-
-								
-							 <button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-danger" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">class average</span>
-							</button>
-					</div>
-				</div>
-
-
-
-
-
-
-				<div id="cn">
-					<div class="selected-subject">
-						<div style="">
-						<h3 class="container2hedings" style="text-align: center;"> CN</h3>
-						<div style="" class="selected-subject-bars">
-							<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p98 big nanda bark" style="font-size: 200px;">
-							    <span >98%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-							     <p style="text-align: center;" class="container2ptag">Your Score</p>
-							    </div>
-
-								<div  class="selected-subject-bars">
-								<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p66 big nanda2 bark"  style="font-size: 200px;">
-							    <span>40/60</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							        </div>							        
-							    </div>  
-						    </div>
-						    <p style="text-align: center;" class="container2ptag">Internals</p>
-							</div>
-						</div>
-							
-					</div>
-					<div class="selected-subject-progressbar">
-						<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-1</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-2</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Mid-sem</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Project</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-					</div>
-					<div class="progressbar-indicators">
-							
-							<button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-warning" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">your marks</span>
-							</button>
-
-
-
-								
-							 <button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-danger" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">class average</span>
-							</button>
-					</div>
-				</div>
-
-
-
-
-
-				<div id="els">
-					<div class="selected-subject">
-						<div style="">
-						<h3 class="container2hedings" style="text-align: center;"> ELS</h3>
-						<div style="" class="selected-subject-bars">
-							<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p43 big nanda bark" style="font-size: 200px;">
-							    <span >43%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-							     <p style="text-align: center;" class="container2ptag">Your Score</p>
-							    </div>
-
-								<div  class="selected-subject-bars">
-								<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p55 big nanda2 bark"  style="font-size: 200px;">
-							    <span>40/60</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							        </div>							        
-							    </div>  
-						    </div>
-						    <p style="text-align: center;" class="container2ptag">Internals</p>
-							</div>
-						</div>
-							
-					</div>
-					<div class="selected-subject-progressbar">
-						<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-1</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Quiz-2</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Mid-sem</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-  					<div class="selected-subject-progressbar1">
-						<span class="container2ptag" style="float:left;margin-right: 50px;">Project</span>
-						<div class="progress bg-dark " style="height:8px;margin-top: 9px;">
-  							<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-  							<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-  						</div>
-  					</div>
-
-
-					</div>
-					<div class="progressbar-indicators">
-							
-							<button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-warning" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">your marks</span>
-							</button>
-
-
-
-								
-							 <button class="btn btn-transparent" type="button" disabled>
-							  <span class="spinner-grow spinner-grow-lg bg-danger" role="status" aria-hidden="true"></span>
-							  <span style="color: red;font-size: 22;font-weight: 500;">class average</span>
-							</button>
-					</div>
-				</div>
-
-
-
-
-
-				</div>
-			</div>			
-		</div>
-
-
-
-	</div>
 </div>
+<div class="col-sm-2 col-md-3 col-lg-4">
+</div>
+</div>
+</div>
+<div class="container second">
+<div class="row">
+<div class="col-sm-4">
+<div class="card1">
+<h1 style="margin-bottom:0px;">Office Timings</h1><br>
+<p>9:00am to 5:30pm.<br><br>
+Working days<br>
+Monday to Friday,<br>
+3rd and 5th Saturday<br>
+working</pre>
+</div>
+<div class=" calender ">
 
+<h2 style="padding-bottom:16px;">Calender</h2>
+<h5><span style="color:red;"><-</span> June <span style="color:red;">-></span></h5>
+<ul class="days">
+<li class="day">mon </li>
+<li class="day">tue </li>
+<li class="day">wed </li>
+<li class="day">thur </li>
+<li class="day">fri </li>
+<li class="day">sat </li>
+<li class="day">sun </li>
+</ul>
+<br>
+<ul class="cla">
+<li><br></li>
+<li>3</li>
+<li>10</li>
+<li>17</li>
+<li>24</li>
+</ul>
+<ul class="cla">
+<li><br></li>
+<li>3</li>
+<li>10</li>
+<li>17</li>
+<li>24</li>
+</ul>
+<ul class="cla">
+<li><br></li>
+<li>3</li>
+<li>10</li>
+<li>17</li>
+<li>24</li>
+</ul>
+<ul class="cla">
+<li>1</li>
+<li>3</li>
+<li>10</li>
+<li>17</li>
+<li>24</li>
+</ul>
+<ul class="cla">
+<li>2</li>
+<li>3</li>
+<li>10</li>
+<li>17</li>
+<li>24</li>
+</ul>
+<ul class="cla">
+<li style="background-color:#F25F5C;border-radius:35px;">2</li>
+<li>3</li>
+<li>10</li>
+<li>17</li>
+<li>24</li>
+</ul>
+<ul class="cla">
+<li style="background-color:#F25F5C;border-radius:35px;">2</li>
+<li>3</li>
+<li>10</li>
+<li>17</li>
+<li>24</li>
+</ul>
 
+</div>
+</div>
+<div class="col-sm-8">
+<div class="card2">
+<P>25% Reservation  Admissions  Curriculum  Budgets  ICT  Inclusion  School Infrastructure  Mid Day Meal  Quality  SMCs  Recognition  Teachers  Vouchers  PreSchool Education  Elementary Education  Secondary Education  Higher Education  Vocational Training  Courts  Government Orders  Government Schools  Government Aided Schools  Private Schools  Budget Private Schools  CSR and Civil Society  Success Stories25% Reservation  Admissions  Curriculum  Budgets  ICT  Inclusion  School Infrastructure  Mid Day Meal  QualityPrivate Schools  Budget Private Schools  CSR and Civil Society  Success Stories25% Reservation  Admissions  Curriculum  Budgets  ICT  Inclusion  School Infrastructure  Mid Day Meal  Quality</P>
+</div>
+<h1 style="padding:30px;">Site news</h1>
+<div class="parllel-cards">
+<img class="pcard-image" src="images\home.jpg">
+<P>25% Reservation  Admissions  Curriculum  Budgets  ICT  Inclusion  School Infrastructure  Mid Day Meal  Quality  SMCs  Recognition  Teachers  Vouchers  PreSchool Education  Elementary Education  Secondary Education  Higher Education  Vocational Training  Courts  Government Orders  Government Schools   </P>
+</div>
+<div class="parllel-cards">
+<img class="pcard-image" src="images\home.jpg">
+<P>25% Reservation  Admissions  Curriculum  Budgets  ICT  Inclusion  School Infrastructure  Mid Day Meal  Quality  SMCs  Recognition  Teachers  Vouchers  PreSchool Education  Elementary Education  Secondary Education  Higher Education  Vocational Training  Courts  Government Orders  Government Schools   </P>
+</div>
+<div class="parllel-cards">
+<img class="pcard-image" src="images\home.jpg">
+<P>25% Reservation  Admissions  Curriculum  Budgets  ICT  Inclusion  School Infrastructure  Mid Day Meal  Quality  SMCs  Recognition  Teachers  Vouchers  PreSchool Education  Elementary Education  Secondary Education  Higher Education  Vocational Training  Courts  Government Orders  Government Schools   </P>
+</div>
+<div class="parllel-cards">
+<img class="pcard-image" src="images\home.jpg">
+<P>25% Reservation  Admissions  Curriculum  Budgets  ICT  Inclusion  School Infrastructure  Mid Day Meal  Quality  SMCs  Recognition  Teachers  Vouchers  PreSchool Education  Elementary Education  Secondary Education  Higher Education  Vocational Training  Courts  Government Orders  Government Schools   </P>
+</div>
+<h2 style="padding:0px 30px; ">older topics...</h2>
+<div class="menu">
+<h1 id="menu" >Menu</h1>
 
-
-
-
-
-
-
-
-<div class="container-fluid container4" id="attedencecard">
-	<div class="row">
-		<div class="col-sm-3"  >
-		<img src="images/bml.jpg" class="bmllogo">
-		</div>
-
-
-
-		<div class="col-sm-9 " >
-			<div class="whole-attendence">
-			<div class="whole-attendence-card">
-
-
-			<div class="attence-1-subcard">
-				<span class="container2hedings" style="text-align: center;">Attendance<span>
-				<br><br>
-
-				<div style="" class="">
-							<div class="clearfix " style="margin-top:40px;">
-							    <div class="c100 p80big nanda bark" style="font-size: 200px;">
-							    <span >80%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-						 <p style="text-align: center;" class="container2ptag">Your Attendace</p>
-				</div>
-				<div style="padding-top: 50px;text-align: justify;" class="container2ptag-attendence1">
-				<p class="container2ptag-attendence" style="text-align: center;display: inline;">Criteria <span  style="font-weight: 550;">- 80%</span></p>
-				<br>
-				<p class="container2ptag-attendence" style="text-align: center;display: inline;">Overall Attendance <span  style="font-weight: 550;">- 60%</span></p>
-				<br>
-				<p class="container2ptag-attendence" style="text-align: center;display: inline;font-weight: 500;letter-spacing: 1px;">Attendance Stats:</p>
-				<br>
-				<p class="container2ptag-attendence" style="text-align: center;display: inline;">Classes Attended <span  style="font-weight: 550;">33</span></p>
-				<br>
-				<p class="container2ptag-attendence" style="text-align: center;display: inline;">Total Classes <span  style="font-weight: 550;">35</span></p>
-				<br>
-				</div>
-				</div>
-
-			
-
-
-			<div class="attendence-of-subjects">
-
-
-				  <div class="card sub5" style="">
-            <div class="card-body">
-                <p class="pl-1 pb-1 vl"><span class="pl-1" style="border-left: 3px solid #D9CB4E;">D</span>esign and
-                    Analysis of Algorithm</p>
-                <div class="d-flex flex-row">
-                    <div class="m1">
-                        <div class="attendance">
-                            Attendance
-                        </div>
-                        <div class="numerical_stats">
-                            8/12
-                        </div>
-                    </div>
-                    <div class="m2">
-                        <div class="attendance ">
-                            Status
-                        </div>
-                        <div class="numerical_stats">
-                            Attend next 3 classes
-                        </div>
-                    </div>
-                    <div class="clearfix " style="margin-left: 30px;margin-top: -40px;">
-							    <div class="c100 p90  nanda bark" style="font-size: 80px;">
-							    <span >90%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-                </div>
-
-
-            </div>
-        </div>
-
-
-
-
-
-         <div class="card sub5" style="">
-            <div class="card-body">
-                <p class="pl-1 pb-1 vl"><span class="pl-1" style="border-left: 3px solid #D9CB4E;">C</span>omputer Networks</p>
-                <div class="d-flex flex-row">
-                    <div class="m1">
-                        <div class="attendance">
-                            Attendance
-                        </div>
-                        <div class="numerical_stats">
-                            8/12
-                        </div>
-                    </div>
-                    <div class="m2">
-                        <div class="attendance ">
-                            Status
-                        </div>
-                        <div class="numerical_stats">
-                            Attend next 3 classes
-                        </div>
-                    </div>
-                     <div class="clearfix " style="margin-left: 30px;margin-top: -40px;">
-							    <div class="c100 p80  nanda bark" style="font-size: 80px;">
-							    <span ><80%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-                </div>
-
-
-            </div>
-        </div>
-
-
-
-         <div class="card sub5" style="">
-            <div class="card-body">
-                <p class="pl-1 pb-1 vl"><span class="pl-1" style="border-left: 3px solid #D9CB4E;">O</span>bject Oiented Programming</p>
-                <div class="d-flex flex-row">
-                    <div class="m1">
-                        <div class="attendance">
-                            Attendance
-                        </div>
-                        <div class="numerical_stats">
-                            8/12
-                        </div>
-                    </div>
-                    <div class="m2">
-                        <div class="attendance ">
-                            Status
-                        </div>
-                        <div class="numerical_stats">
-                            Attend next 3 classes
-                        </div>
-                    </div>
-                     <div class="clearfix " style="margin-left: 30px;margin-top: -40px;">
-							    <div class="c100 p70  nanda bark" style="font-size: 80px;">
-							    <span >70%</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-                </div>
-
-
-            </div>
-        </div>
-
-
-
-
-         <div class="card sub5" style="">
-            <div class="card-body">
-                <p class="pl-1 pb-1 vl"><span class="pl-1" style="border-left: 3px solid #D9CB4E;">C</span>OA</p>
-                <div class="d-flex flex-row">
-                    <div class="m1">
-                        <div class="attendance">
-                            Attendance
-                        </div>
-                        <div class="numerical_stats">
-                            8/12
-                        </div>
-                    </div>
-                    <div class="m2">
-                        <div class="attendance ">
-                            Status
-                        </div>
-                        <div class="numerical_stats">
-                            Attend next 3 classes
-                        </div>
-                    </div>
-                     <div class="clearfix " style="margin-left: 30px;margin-top: -40px;">
-							    <div class="c100 p70   nanda bark" style="font-size: 80px;">
-							    <span >60 %</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-                </div>
-
-
-            </div>
-        </div>
-
-
-
-
-         <div class="card sub5" style="">
-            <div class="card-body">
-                <p class="pl-1 pb-1 vl"><span class="pl-1" style="border-left: 3px solid #D9CB4E;">D</span>BMS</p>
-                <div class="d-flex flex-row">
-                    <div class="m1">
-                        <div class="attendance">
-                            Attendance
-                        </div>
-                        <div class="numerical_stats">
-                            8/12
-                        </div>
-                    </div>
-                    <div class="m2">
-                        <div class="attendance ">
-                            Status
-                        </div>
-                        <div class="numerical_stats">
-                            Attend next 3 classes
-                        </div>
-                    </div>
-                     <div class="clearfix " style="margin-left: 30px;margin-top: -40px;">
-							    <div class="c100 p70  nanda bark" style="font-size: 80px;">
-							    <span >70 %</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-                </div>
-
-
-            </div>
-        </div>
- <div class="card sub5" style="">
-            <div class="card-body">
-                <p class="pl-1 pb-1 vl"><span class="pl-1" style="border-left: 3px solid #D9CB4E;">E</span>LS</p>
-                <div class="d-flex flex-row">
-                    <div class="m1">
-                        <div class="attendance">
-                            Attendance
-                        </div>
-                        <div class="numerical_stats">
-                            8/12
-                        </div>
-                    </div>
-                    <div class="m2">
-                        <div class="attendance ">
-                            Status
-                        </div>
-                        <div class="numerical_stats">
-                            Attend next 3 classes
-                        </div>
-                    </div>
-                     <div class="clearfix " style="margin-left: 30px;margin-top: -40px;">
-							    <div class="c100 p70   nanda bark" style="font-size: 80px;">
-							    <span >70 %</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-                </div>
-
-
-            </div>
-        </div>
-         <div class="card sub5" style="">
-            <div class="card-body">
-                <p class="pl-1 pb-1 vl"><span class="pl-1" style="border-left: 3px solid #D9CB4E;">E</span>MSA</p>
-                <div class="d-flex flex-row">
-                    <div class="m1">
-                        <div class="attendance">
-                            Attendance
-                        </div>
-                        <div class="numerical_stats">
-                            8/12
-                        </div>
-                    </div>
-                    <div class="m2">
-                        <div class="attendance ">
-                            Status
-                        </div>
-                        <div class="numerical_stats">
-                            Attend next 3 classes
-                        </div>
-                    </div>
-                     <div class="clearfix " style="margin-left: 30px;margin-top: -40px;">
-							    <div class="c100 p80   nanda bark" style="font-size: 80px;">
-							    <span >80 %</span>
-							     	<div class="slice">
-							            <div class="bar"></div>
-							            <div class="fill"></div>
-							     	</div>
-							    </div>
-								</div>
-                </div>
-
-
-            </div>
-        </div>
-
-
-
-
-			</div>
-			
-
-					
-	
-
-
-	</div>
+<div  class="parllel-cards2" id="visi">
+<p class="parllel-cards2-card">student information</p>
+<p class="parllel-cards2-card">student information</p>
+<p class="parllel-cards2-card">student information</p>
+<p class="parllel-cards2-card">student information</p>
+<p class="parllel-cards2-card">student information</p>
+<p class="parllel-cards2-card">student information</p>
 </div>
 </div>
 </div>
 </div>
-
-
-
-
+</div>
+<div class="container-fluid">
+<div class="row ">
+<div class="col-sm-12 footer">
+<img class="footerimg"src="images\bml.jpg">
+</div>
+</div>
+</div>
 
 <script>
-	var a=document.getElementById("attendence");
-a.onclick=function (){
+var x;
+x=2;
+document.getElementById("menu").onclick= function (){
 
-document.getElementById("attedencecard").style.display="block";
-document.getElementById("coursecard").style.display="none";
-a.classList.add("rest");
-c.classList.remove("rest");
+if(x%2==0)
+{
+document.getElementById("visi").style.display="block"; 
 }
-
-var c=document.getElementById("courses");
-c.onclick=function (){
-document.getElementById("attedencecard").style.display="none";
-
-document.getElementById("coursecard").style.display="block";
-c.classList.add("rest");
-a.classList.remove("rest");
+else
+{
+document.getElementById("visi").style.display="none"; 
+}
+x=x+1;
 }
 
+document.getElementById("submit").onclick= function (){
+document.getElementById("phpelments").style.display="inline-block";
 
-</script>
-
-
-<script >
-function resize(){
-	document.getElementById("sdaa").style.fontSize="1.3vw";
-	document.getElementById("scoa").style.fontSize="1.3vw";
-	document.getElementById("soops").style.fontSize="1.3vw";
-	document.getElementById("sdbms").style.fontSize="1.3vw";
-	document.getElementById("semsa").style.fontSize="1.3vw";
-	document.getElementById("scn").style.fontSize="1.3vw";
-	document.getElementById("sels").style.fontSize="1.3vw";
 }
-
-	document.getElementById("sdaa").onclick=function (){
-		resize();
-	document.getElementById("sdaa").style.fontSize="1.8vw";
-	document.getElementById("daa").style.display="block";
-	document.getElementById("coa").style.display="none";
-	document.getElementById("oops").style.display="none";
-	document.getElementById("dbms").style.display="none";
-	document.getElementById("emsa").style.display="none";
-	document.getElementById("cn").style.display="none";
-	document.getElementById("els").style.display="none";
-}
-	document.getElementById("scoa").onclick=function (){
-		resize();
-	document.getElementById("scoa").style.fontSize="1.8vw";
-	document.getElementById("daa").style.display="none";
-	document.getElementById("coa").style.display="block";
-	document.getElementById("oops").style.display="none";
-	document.getElementById("dbms").style.display="none";
-	document.getElementById("emsa").style.display="none";
-	document.getElementById("cn").style.display="none";
-	document.getElementById("els").style.display="none";
-}
-	document.getElementById("soops").onclick=function (){
-		resize();
-	document.getElementById("soops").style.fontSize="1.8vw";
-	document.getElementById("daa").style.display="none";
-	document.getElementById("coa").style.display="none";
-	document.getElementById("oops").style.display="block";
-	document.getElementById("dbms").style.display="none";
-	document.getElementById("emsa").style.display="none";
-	document.getElementById("cn").style.display="none";
-	document.getElementById("els").style.display="none";
-}
-	document.getElementById("sdbms").onclick=function (){
-		resize();
-	document.getElementById("sdbms").style.fontSize="1.8vw";
-	document.getElementById("daa").style.display="none";
-	document.getElementById("coa").style.display="none";
-	document.getElementById("oops").style.display="none";
-	document.getElementById("dbms").style.display="block";
-	document.getElementById("emsa").style.display="none";
-	document.getElementById("cn").style.display="none";
-	document.getElementById("els").style.display="none";
-}
-	document.getElementById("semsa").onclick=function (){
-		resize();
-	document.getElementById("semsa").style.fontSize="1.8vw";
-	document.getElementById("daa").style.display="none";
-	document.getElementById("coa").style.display="none";
-	document.getElementById("oops").style.display="none";
-	document.getElementById("dbms").style.display="none";
-	document.getElementById("emsa").style.display="block";
-	document.getElementById("cn").style.display="none";
-	document.getElementById("els").style.display="none";
-}
-	document.getElementById("scn").onclick=function (){
-		resize();
-	document.getElementById("scn").style.fontSize="1.8vw";
-	document.getElementById("daa").style.display="none";
-	document.getElementById("coa").style.display="none";
-	document.getElementById("oops").style.display="none";
-	document.getElementById("dbms").style.display="none";
-	document.getElementById("emsa").style.display="none";
-	document.getElementById("cn").style.display="block";
-	document.getElementById("els").style.display="none";
-}
-	document.getElementById("sels").onclick=function (){
-		resize();
-	document.getElementById("sels").style.fontSize="1.8vw";
-	document.getElementById("daa").style.display="none";
-	document.getElementById("coa").style.display="none";
-	document.getElementById("oops").style.display="none";
-	document.getElementById("dbms").style.display="none";
-	document.getElementById("emsa").style.display="none";
-	document.getElementById("cn").style.display="none";
-	document.getElementById("els").style.display="block";
-}
-
 
 </script>
 </body>
