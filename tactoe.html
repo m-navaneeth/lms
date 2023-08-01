@@ -1,0 +1,422 @@
+<html>
+<head>
+<style >
+
+td{
+width: 90px;
+height: 90px;
+
+}
+table,td{
+	font-size: 1.2cm;
+text-align: center;
+	border-collapse: collapse
+}
+	.m{
+	border-right: 2px solid black;
+	
+}
+	.n{
+	
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+</style>
+
+</head>
+<body>
+<h1 style="text-align: center;margin-top: 50px; font-size: 50px;color: 009ddc;">Human vs Computer tic-tac-toe game</h1>
+<h2 style="text-align: center;margin-top: 30px;font-size:40px;color: 00cecb;" id="turn">Turn:Player</h2>
+<center>
+<table  >
+<tr>
+	<td id="1" class="m" style="color: ff715b;">click </td>
+	<td id="2" class="m" style="color: 00cecb">to </td>
+	<td  id="3" style="color: 009ddc">start</td>
+</tr>
+<tr>
+	<td  id="4" class="n m" style="color: 00cecb"></td>
+	<td  id="5" class="n m" style="color: 009ddc"></td>
+	<td  id="6" class="n" style="color: ff715b;"></td>
+</tr>
+<tr>
+	<td  id="7" class="m" style="color: 009ddc"></td>
+	<td  id="8" class="m" style="color: ff715b;"></td>
+	<td  id="9"  style="color: 00cecb"></td>
+</tr>
+
+</table>
+</center>
+
+<center>
+<h1 style="display: none;font-size: 1.2cm;" id="xwin" >player wins <br>click here restart the game  <button onclick="location.reload();" style="padding: 25px;background-color:#009ddc;color: white;font-size: 1cm;border-radius: 20px;margin-left: 20px;border:none;">Play Again</button></h1>
+
+</center>
+
+<center>
+<h1 style="display: none;font-size: 1.2cm;" id="owin" >computer wins <br>click here restart the game<button onclick="location.reload();" style="padding: 25px;background-color:#009ddc;color: white;font-size: 1cm;border-radius: 20px;margin-left: 20px;border:none;">Play Again</button></h1>
+
+</center>
+
+<center>
+<h1 style="display: none;font-size: 1.2cm;" id="draw" >draw <br>click here restart the game<button onclick="location.reload();" style="padding: 25px;background-color:#009ddc;color: white;font-size: 1cm;border-radius: 20px;margin-left: 20px;border:none;">Play Again</button></h1>
+
+</center>
+
+
+<script >
+var i=0;
+var a=[0,0,0,0,0,0,0,0,0,0];
+var n=1;
+document.getElementById("1").onclick=function(){
+clicked(1);
+}
+document.getElementById("2").onclick=function(){
+clicked(2);
+}
+document.getElementById("3").onclick=function(){
+clicked(3);
+}
+document.getElementById("4").onclick=function(){
+clicked(4);
+}
+document.getElementById("5").onclick=function(){
+clicked(5);
+}
+document.getElementById("6").onclick=function(){
+clicked(6);
+}
+document.getElementById("7").onclick=function(){
+clicked(7);
+}
+document.getElementById("8").onclick=function(){
+clicked(8);
+}
+document.getElementById("9").onclick=function(){
+clicked(9);
+}
+
+
+
+function num(state){
+var c=0;
+for (var i = 1; i <10; i++)
+{
+	if(state[i]==0){
+		c++;
+	}
+}
+
+
+
+
+
+if (state[1] == 1 && state[2] == 1 && state[3] == 1)
+{
+        return 1;
+}
+    if (state[3] == 1&&state[6] == 1 && state[9] == 1)
+    {
+        return 1;
+    }
+    if (state[7] == 1 && state[8] == 1 && state[9] == 1)
+    {
+        return 1;
+    }
+    if (state[1] == 1 && state[4] == 1 && state[7] == 1)
+    {
+        return 1;
+    }
+    if (state[4] == 1 && state[5] == 1 && state[6] == 1)
+    {
+        return 1;
+    }
+    if (state[2] == 1 && state[5] == 1 && state[8] == 1)
+    {
+        return 1;
+    }
+    if (state[1] == 1 && state[5] == 1 && state[7] == 1)
+    {
+        return 1;
+    }
+    if (state[7] == 1 && state[5] == 1 && state[3] == 1)
+    {
+        return 1;
+    }
+
+
+
+
+
+
+    if (state[1] == -1 && state[2] == -1 && state[3] == -1)
+    {
+        return -1;
+    }
+    if (state[3] == -1 && state[6] == -1 && state[9] == -1)
+{
+        return -1;
+    }
+    if (state[7] == -1 && state[8] == -1 && state[9] == -1)
+    {
+        return -1;
+    }
+    if (state[1] == -1 && state[4] == -1 && state[7] == -1)
+    {
+        return -1;
+    }
+    if (state[4] == -1 && state[5] == -1 && state[6] == -1)
+    {
+        return -1;
+    }
+    if(state[2] == -1 && state[5] == -1 && state[8] == -1)
+    {
+        return -1;
+    }
+    if (state[1] == -1 && state[5] == -1 && state[7] == -1)
+    {
+        return -1;
+    }
+    if(state[7] == -1 && state[5] == -1 && state[3] == -1)
+    {
+        return -1;
+    }
+    else if(c==0)
+    {
+    	return 0;
+    }
+    else if(c!=0){
+    	return -5000;
+    }
+
+
+}
+
+
+
+function score(state,minomax){
+
+
+	statescore=num(state)
+	if(statescore!= -5000)
+	{
+		return statescore;
+	}
+
+
+	if(minomax==0)
+	{
+	var bestscore=5000;
+	for (var i = 1; i <10; i++)
+	 {
+  	var temp=[...state];
+  	if(temp[i]==0)
+  		{
+  		temp[i]=-1;
+  		var result=score(temp,1);
+  		if(result<bestscore)
+  			{
+  			bestscore=result;
+  			}
+  		}
+     }
+     return bestscore;
+	}
+
+
+	if(minomax==1)
+	{
+	var bestscore=-5000;
+	for (var i = 1; i <10; i++)
+	 {
+  	var temp=[...state];
+  	if(temp[i]==0)
+  		{
+  		temp[i]=1;
+  		var result=score(temp,0);
+  		if(result>bestscore)
+  			{
+  			bestscore=result;
+  			}
+  		}
+     }
+     return bestscore;
+	}
+
+
+
+}
+
+
+
+
+function getRandomInt() {
+	
+	var itemp=i;
+	var bestscore=-5000;
+	var bestmove=0;
+  for (var i = 1; i <10; i++) {
+  	var temp=[...a];
+  	if(temp[i]==0)
+  	{
+  		temp[i]=1;
+  		var result=score(temp,0);
+  		if(result>bestscore)
+  		{
+  			bestscore=result;
+  			bestmove=i;
+  		}
+  	}
+
+  }
+return bestmove;
+}
+
+
+
+
+
+function clicked(que)
+{
+	if(a[que]==0&&n==1)
+	{
+
+i++;
+c();
+document.getElementById(String(que)).innerHTML="X";
+document.getElementById('turn').innerHTML="Turn:computer";
+xw();
+a[que]=-1;
+
+
+if(n==1){
+	i++;
+var rand=0
+
+rand=getRandomInt();
+
+document.getElementById(String(rand)).innerHTML="O";
+document.getElementById('turn').innerHTML="Turn:Player";
+ow();
+a[rand]=1;
+}
+}
+
+}
+
+
+
+
+function c()
+{
+if(i==1)
+{
+document.getElementById("1").innerHTML="";
+document.getElementById("2").innerHTML="";
+document.getElementById("3").innerHTML="";
+}
+}
+
+function full(){
+
+	if(i==9 && n==1)
+	{
+document.getElementById("draw").style.display="block";
+n=0;
+	}
+}
+
+function xw()
+{
+	var one=0
+	var two=0;
+
+	for(one=2;one<9;one+=3)
+		{
+			if(document.getElementById(String(one-1)).innerHTML=="X"&&document.getElementById(String(one)).innerHTML=="X"&&document.getElementById(String(one+1)).innerHTML=="X")
+			{
+				document.getElementById("xwin").style.display="block";
+				n=0;
+			}
+	
+
+		}
+		for(two=4;two<7;two++)
+		{
+			if(document.getElementById(String(two-3)).innerHTML=="X"&&document.getElementById(String(two)).innerHTML=="X"&&document.getElementById(String(two+3)).innerHTML=="X")
+			{
+				document.getElementById("xwin").style.display="block";
+				n=0;
+			}
+	
+
+		}
+
+if(document.getElementById("1").innerHTML=="X"&&document.getElementById("5").innerHTML=="X"&&document.getElementById("9").innerHTML=="X")
+	{
+		
+		document.getElementById("xwin").style.display="block";
+		
+n=0;
+	}
+	if(document.getElementById("3").innerHTML=="X"&&document.getElementById("5").innerHTML=="X"&&document.getElementById("7").innerHTML=="X")
+	{
+		
+		document.getElementById("xwin").style.display="block";
+		
+n=0;
+	}
+
+full();
+}
+
+
+
+
+function ow()
+{
+
+
+	var one=0
+	var two=0;
+
+	for(one=2;one<9;one+=3)
+		{
+			if(document.getElementById(String(one-1)).innerHTML=="O"&&document.getElementById(String(one)).innerHTML=="O"&&document.getElementById(String(one+1)).innerHTML=="O")
+			{
+				document.getElementById("owin").style.display="block";
+				n=0;
+			}
+	
+
+		}
+		for(two=4;two<7;two++)
+		{
+			if(document.getElementById(String(two-3)).innerHTML=="O"&&document.getElementById(String(two)).innerHTML=="O"&&document.getElementById(String(two+3)).innerHTML=="O")
+			{
+				document.getElementById("owin").style.display="block";
+				n=0;
+			}
+	
+
+		}
+
+if(document.getElementById("1").innerHTML=="O"&&document.getElementById("5").innerHTML=="O"&&document.getElementById("9").innerHTML=="O")
+	{
+		
+		document.getElementById("owin").style.display="block";
+		
+n=0;
+	}
+	if(document.getElementById("3").innerHTML=="O"&&document.getElementById("5").innerHTML=="O"&&document.getElementById("7").innerHTML=="O")
+	{
+		
+		document.getElementById("owin").style.display="block";
+		
+n=0;
+	}
+	full();
+}
+</script>
+</body>
+</html>
