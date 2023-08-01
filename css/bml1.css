@@ -100,6 +100,7 @@ background-color: #50514F;
 display:inline-block;
 margin:10px;
 border-radius: 6%;
+cursor: pointer;
 }
 @media screen and (max-width: 1260px) and (min-width: 847px)
 {
